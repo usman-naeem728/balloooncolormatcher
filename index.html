@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ballon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+    <div class="blur" id="blur">
+
+        <div class="result">
+            <div class="colour">COLOR:
+                <div id="color"></div>
+                <div class="reload" onclick="reload()"><i class="fa fa-refresh fa-spin" style="font-size:20px"></i>
+                </div>
+            </div>
+            <div class="points">POINTS:
+                <div id="point"></div>
+            </div>
+            <div class="life">LIFE:
+                <div class="lifeicon" id="lifeicon"><i class="fa fa-heart" id="li1" style="font-size:24px"></i><i class="fa fa-heart" id="li2" style="font-size:24px"></i><i class="fa fa-heart" id="li3" style="font-size:24px"></i><i class="fa fa-heart" id="li4" style="font-size:24px"></i><i class="fa fa-heart" id="li5" style="font-size:24px"></i></div>
+            </div>
+            <div class="time">TIME:
+                <div id="countdown">00</div>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="balloon" id="bal1" onclick="chack(1)"></div>
+            <div class="balloon" id="bal2" onclick="chack(2)"></div>
+            <div class="balloon" id="bal3" onclick="chack(3)"></div>
+            <div class="balloon" id="bal4" onclick="chack(4)"></div>
+            <div class="balloon" id="bal5" onclick="chack(5)"></div>
+            <div class="balloon" id="bal6" onclick="chack(6)"></div>
+            <div class="balloon" id="bal7" onclick="chack(7)"></div>
+            <div class="balloon" id="bal8" onclick="chack(8)"></div>
+            <div class="balloon" id="bal9" onclick="chack(9)"></div>
+            <div class="balloon" id="bal10" onclick="chack(10)"></div>
+            <div class="balloon" id="bal11" onclick="chack(11)"></div>
+            <div class="balloon" id="bal12" onclick="chack(12)"></div>
+            <div class="balloon" id="bal13" onclick="chack(13)"></div>
+            <div class="balloon" id="bal14" onclick="chack(14)"></div>
+            <div class="balloon" id="bal15" onclick="chack(15)"></div>
+            <div class="balloon" id="bal16" onclick="chack(16)"></div>
+            <div class="balloon" id="bal17" onclick="chack(17)"></div>
+            <div class="balloon" id="bal18" onclick="chack(18)"></div>
+            <div class="balloon" id="bal19" onclick="chack(19)"></div>
+            <div class="balloon" id="bal20" onclick="chack(20)"></div>
+            <div class="balloon" id="bal21" onclick="chack(21)"></div>
+
+        </div>
+
+    </div>
+    <div class="starter" id="start">
+        <h1>You have one minute <br><br> burst the maximium balloons as you can</h1>
+        <button onclick="start()">Start game</button>
+    </div>
+
+    <div class="ended" id="ended">
+        <h1>TIMES UP</h1>
+        <h2>YOUR SCORE:</h2>
+        <h3 id="yScore"></h3>
+        <button onclick="location.reload()">play again</button>
+
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="timer.js"></script>
+</body>
+
+</html>
